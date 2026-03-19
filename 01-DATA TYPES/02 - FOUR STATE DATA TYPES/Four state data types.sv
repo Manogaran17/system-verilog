@@ -25,7 +25,7 @@ initial
   #20;
   a=8'hff;
   b=6'd34;
-  c=4'd9;
+ 
   d=26.67;
   e=$time;
   f=64'hffffffffffffffff;
@@ -33,8 +33,8 @@ initial
       $display("default value of a=%b",a);
       $display("default value of b=%b",b);
       $display("default value of c=%b",c);
-      $display("default value of d=%0f",d);
-      $display("default value of e=%0t",e);
+      $display("default value of d=%0f(%b)",d,d);
+      $display("default value of e=%0t(%b)",e,e);
       $display("default value of f=%b",f);
     end 
   
