@@ -26,16 +26,16 @@ initial
   a=8'hff;
   b=6'd34;
  
-  d=26.67;
+  d=18446744073709551.615;
   e=$time;
-  f=64'hffffffffffffffff;
+  f=32'hffff;
 
-      $display("default value of a=%b",a);
-      $display("default value of b=%b",b);
-      $display("default value of c=%b",c);
-      $display("default value of d=%0f(%b)",d,d);
-      $display("default value of e=%0t(%b)",e,e);
-      $display("default value of f=%b",f);
+      $display("value of a=%b",a);
+      $display("value of b=%b",b);
+      $display("value of c=%b",c);
+      $display("value of d=%0f(%b)",d,d);
+      $display("value of e=%0t(%b)",e,e);
+      $display("value of f=%0d(%b)",f,f);
     end 
   
   
