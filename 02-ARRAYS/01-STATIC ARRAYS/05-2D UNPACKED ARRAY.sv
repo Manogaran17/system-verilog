@@ -1,4 +1,4 @@
-// Code your testbench here
+
 
 module unpacked_2darray;
   shortint data[4][4];
