@@ -1,5 +1,4 @@
-// Code your testbench here
-// or browse Examples
+
 module packed_3darray;
   
   logic [3:0][2:0][2:0]data;
