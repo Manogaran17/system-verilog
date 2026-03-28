@@ -13,8 +13,7 @@ module unpacked_1Darray;
     
     for(i=0;i<8;i++)begin
       $display("data[%0d]=%0d",i,data[i]);
-    end 
-    
+    end     
     $display("-----array elements indexing-----");
     
     $display("data[0]=%0d(%b)",data[0],data[0]);
