@@ -1,5 +1,4 @@
-// Code your testbench here
-// or browse Examples
+
 module array_1D;
   logic [7:0]data1;
   bit [7:0]data2;
