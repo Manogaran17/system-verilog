@@ -66,4 +66,36 @@ module static_to_dynamic_arr;
      
     end
 endmodule 
+----------------------------------output-------------------------------------------------------------------------------------------------
       
+arr[0]=0
+arr[1]=0
+arr[2]=0
+arr[3]=0
+arr[4]=0
+static_arr[0]=50
+static_arr[1]=51
+static_arr[2]=52
+static_arr[3]=53
+static_arr[4]=54
+----after assigning static to dynamic-----
+arr[0]=50
+arr[1]=51
+arr[2]=52
+arr[3]=53
+arr[4]=54
+--------copied array----------
+arr_copy[0]=50
+arr_copy[1]=51
+arr_copy[2]=52
+arr_copy[3]=53
+arr_copy[4]=54
+partial copy 
+arr_partial[0]=50
+arr_partial[1]=51
+arr_partial[2]=52
+after delete size=0
+-----display after reallocation--------
+arr[0]=90
+arr[1]=67
+           V C S   S i m u l a t i o n   R e p o r t 
