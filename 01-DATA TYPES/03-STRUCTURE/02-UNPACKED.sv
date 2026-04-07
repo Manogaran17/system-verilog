@@ -51,4 +51,22 @@ module struct_packed;
     end 
   
 endmodule 
+------student details----------
+
+students 0:
+name=mano
+rollno=29
+mark=564
+
+students 1:
+name=sakthi
+rollno=38
+mark=593
+
+students 2:
+name=ram
+rollno=27
+mark=573
+actual array='{'{name:"mano", rollno:29, mark:564}, '{name:"sakthi", rollno:38, mark:593}, '{name:"ram", rollno:27, mark:573}}
+           V C S   S i m u l a t i o n   R e p o r t 
       
