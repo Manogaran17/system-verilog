@@ -37,5 +37,4 @@ module structure;
     end 
 endmodule 
       
-  
 
