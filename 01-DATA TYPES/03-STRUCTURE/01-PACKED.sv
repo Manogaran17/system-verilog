@@ -36,5 +36,3 @@ module structure;
       $display("actual array=%p",student);
     end 
 endmodule 
-
-
