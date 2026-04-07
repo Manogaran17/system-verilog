@@ -36,3 +36,25 @@ module structure;
       $display("actual array=%p",student);
     end 
 endmodule 
+----student details-----
+id=4
+mark=90
+pass=1
+
+s 0:
+id=0
+mark=0
+pass=0
+
+s 1:
+id=4
+mark=90
+pass=1
+
+s 2:
+id=5
+mark=78
+pass=1
+
+bus=0100010110101(2229)
+           V C S   S i m u l a t i o n   R e p o r t 
