@@ -50,6 +50,37 @@ module queue_methods;
       
       // after push operation queue
       $display("after push_back = %p",queue);
+      
+      // reverse 
+      queue.reverse();
+      $display(" after reverse operation =%p",queue);
+      
+      queue.sort();
+      $display(" after sort operation =%p",queue);
+      
+      queue.rsort();
+      $display(" after rsort operation =%p",queue);
+      
+      queue.shuffle();
+      $display(" after shuffle operation =%p",queue);
+      
     end
-endmodule   
+endmodule 
+  ---------------------------------------------output-----------------------------------------------------------
+      original queue ='{0, 1, 2, 3, 4, 5, 6} 
+
+size of queue x=7
+after insertion queue='{0, 1, 2, 7, 3, 4, 5, 6} 
+after deletion of index 5 queue='{0, 1, 2, 7, 3, 5, 6} 
+pop_front element y=0
+after pop_front = '{1, 2, 7, 3, 5, 6} 
+pop_back element z=6
+after pop_back = '{1, 2, 7, 3, 5} 
+after push_front = '{9, 1, 2, 7, 3, 5} 
+after push_back = '{9, 1, 2, 7, 3, 5, 8} 
+ after reverse operation ='{8, 5, 3, 7, 2, 1, 9} 
+ after sort operation ='{1, 2, 3, 5, 7, 8, 9} 
+ after rsort operation ='{9, 8, 7, 5, 3, 2, 1} 
+ after shuffle operation ='{7, 5, 9, 2, 8, 1, 3} 
+           V C S   S i m u l a t i o n   R e p o r t 
   
