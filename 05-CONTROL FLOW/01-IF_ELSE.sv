@@ -53,3 +53,18 @@ module if_else;
   
    
 endmodule
+
+=========if_else example=========
+
+grade A
+
+grade C
+
+fail
+
+grade C
+
+grade B
+
+grade B
+           V C S   S i m u l a t i o n   R e p o r t 
