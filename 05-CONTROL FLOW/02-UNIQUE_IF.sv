@@ -55,3 +55,20 @@ module if_else;
   
    
 endmodule 
+
+=========if_else example=========
+Grade A
+
+Warning-[RT-MTOCMUIF] More than one condition match in statement
+testbench.sv, 14
+  More than one condition matches are found in 'unique if' statement inside 
+  if_else.mark, at time 0ns.
+  
+  Line number 14 and 18 are overlapping.
+
+Grade C
+FAIL
+Grade C
+Grade B
+Grade B
+           V C S   S i m u l a t i o n   R e p o r t 
