@@ -22,3 +22,6 @@ endclass:transaction
         tr.display();
       end
   endmodule
+// =============================================output========================================
+addr = 10 data = aa
+           V C S   S i m u l a t i o n   R e p o r t 
