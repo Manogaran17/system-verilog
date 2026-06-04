@@ -25,7 +25,7 @@ module tb;
   initial 
     begin
         
-      h1 = new();
+      // h1 = new();
       $display("_______________________________________________");
       
       $display("check wheather the object is created or not");
@@ -42,6 +42,6 @@ endmodule
 
 _______________________________________________
 check wheather the object is created or not
-object is created
+object is not created
 _______________________________________________
            V C S   S i m u l a t i o n   R e p o r t 
