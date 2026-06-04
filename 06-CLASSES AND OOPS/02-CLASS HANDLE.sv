@@ -39,3 +39,9 @@ module tb;
       
     end 
 endmodule 
+
+_______________________________________________
+check wheather the object is created or not
+object is created
+_______________________________________________
+           V C S   S i m u l a t i o n   R e p o r t 
