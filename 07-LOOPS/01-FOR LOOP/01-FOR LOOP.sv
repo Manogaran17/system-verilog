@@ -6,23 +6,18 @@ class transaction;
   function void display();
     
     $display("data=%d addr=%d",data,addr);
-    
+  
   endfunction 
   
 endclass 
 
-
 module tb;
   
   transaction tr;
-  
   initial 
     begin
-      
-      int i;
       $display("generating trasaction");
-      
-      for(i=0;i<9;i++)
+      for(int i=0;i<9;i++)
         begin
           tr=new();
           tr.addr=i;
@@ -32,6 +27,7 @@ module tb;
         end
     end 
 endmodule 
+
 // ==============================OUTPUT==============================
 
 generating trasaction
