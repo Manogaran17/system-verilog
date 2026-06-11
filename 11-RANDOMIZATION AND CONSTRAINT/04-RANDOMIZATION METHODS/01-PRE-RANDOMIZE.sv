@@ -1,43 +1,79 @@
 // Code your testbench here
 // or browse Examples
-class generator;
+class packet;
 
-  rand bit[3:0]value;
-  int status;
+  rand bit[7:0]addr;
+  rand bit[7:0]data;
 
-  constraint c1{value inside{[5:12]};}
-
+  int count;
   function void pre_randomize();
-    $display("Inside pre_randomize");
-    status=0;
+
+    if(count==5) begin
+      rand_mode(0);
+      $display("Randomization Disabled");
+    end
+    else begin
+      rand_mode(1);
+      $display("Randomization Enabled");
+    end
+    count++;
   endfunction
+
 endclass
 
-module tb;
-  generator gen;
-  initial
-    begin
-    gen=new();
 
-    repeat(3)
+module tb;
+  packet p;
+  initial 
+    begin
+    p = new();
+      repeat(7)
       begin
-      $display("\nCalling randomize...");
-      gen.randomize();
-      $display("value=%0d status=%0d",gen.value,gen.status);
+      $display("--------------------------------");
+        $display("Calling randomize()");
+        p.randomize();
+
+      $display("ADDR = %0d",p.addr);
+      $display("DATA = %0d",p.data);
+        
     end
   end
 endmodule
 
-// ====================================OUTPUT===========================================
-Calling randomize...
-Inside pre_randomize
-value=6 status=0
-
-Calling randomize...
-Inside pre_randomize
-value=6 status=0
-
-Calling randomize...
-Inside pre_randomize
-value=9 status=0
+// ===================output===============================================
+--------------------------------
+Calling randomize()
+Randomization Enabled
+ADDR = 185
+DATA = 108
+--------------------------------
+Calling randomize()
+Randomization Enabled
+ADDR = 91
+DATA = 128
+--------------------------------
+Calling randomize()
+Randomization Enabled
+ADDR = 58
+DATA = 86
+--------------------------------
+Calling randomize()
+Randomization Enabled
+ADDR = 7
+DATA = 82
+--------------------------------
+Calling randomize()
+Randomization Enabled
+ADDR = 224
+DATA = 76
+--------------------------------
+Calling randomize()
+Randomization Disabled
+ADDR = 224
+DATA = 76
+--------------------------------
+Calling randomize()
+Randomization Enabled
+ADDR = 211
+DATA = 214
            V C S   S i m u l a t i o n   R e p o r t 
